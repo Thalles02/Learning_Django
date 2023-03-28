@@ -1,13 +1,10 @@
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
-
-
-def my_viewed(request):
-    return HttpResponse("Hello World Urls Django")
+from django.urls import path, include
+from recipes.views import *
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sobre/', my_viewed),
+    path('', my_viewed),
+    path('new_routes/', include('recipes.urls'))
 ]
