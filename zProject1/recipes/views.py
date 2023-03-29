@@ -1,11 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
+name = 'Thalles Augusto Monteiro Martins'
 
 def my_viewed(request):
-    return HttpResponse("Hello World Urls Django")
+    return render(request, 'home.html', context={
+        'name': name,
+    })
 
 
 def init(request):
