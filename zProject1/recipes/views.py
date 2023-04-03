@@ -6,8 +6,9 @@ from django.shortcuts import render
 
 name = 'Thalles Augusto Monteiro Martins'
 
+
 def my_viewed(request):
-    return render(request, 'home.html', context={
+    return render(request, 'recipes/pages/home.html', context={
         'name': name,
     })
 
