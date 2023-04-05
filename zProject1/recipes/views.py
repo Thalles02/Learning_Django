@@ -7,7 +7,7 @@ from django.shortcuts import render
 name = 'Thalles Augusto Monteiro Martins'
 
 
-def my_viewed(request):
+def home(request):
     return render(request, 'recipes/pages/home.html', context={
         'name': name,
     })

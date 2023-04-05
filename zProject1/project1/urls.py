@@ -5,6 +5,6 @@ from recipes.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', my_viewed),
-    path('new_routes/', include('recipes.urls'))
+    path('new_routes/', include('recipes.urls')),
+    path('', home)
 ]
