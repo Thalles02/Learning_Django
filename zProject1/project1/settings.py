@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Includes new apps creates by dev
     'recipes',
+    'pytest_django',
 ]
 
 MIDDLEWARE = [
